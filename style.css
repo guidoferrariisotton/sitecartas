@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #000000, #242424);
+}
+
+#title {
+    color: azure;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+header {
+    background: #332424;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    margin-right: 30px;
+}
+
+li {
+    list-style: none;
+    background: whitesmoke;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+img {
+    place-items: center;
+    width: 350px;
+}
+
+#active {
+    background: wheat;
+}
+
+li:hover {
+    background-color: wheat;
+    color: white;
+    transition: 0.5s;
+    scale: 1.1;
+}
+
+#dropdownmenu {
+    position: absolute;
+    box-shadow: 0 0 5px;
+    display: none;
+    padding: 10px;
+    margin-top: 6px;
+    max-width: 70px;
+    max-height: 100px;
+    overflow: hidden;
+    overflow-y: scroll
+}
+
+#dropdownmenu a {
+    display: block;
+    color: white;
+
+}
+
+#dropdown:hover #dropdownmenu{
+    display: block;
+    
+}
